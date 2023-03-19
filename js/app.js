@@ -58,7 +58,7 @@ let tweets = [
         username: `admiral`,
         created_at: `15-20-2019`,
         age: 19
-    },
+    }
 ]
 
 let counter = 0;
