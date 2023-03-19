@@ -1,82 +1,86 @@
-
-tweeters = [
-
+let tweets = [
 {
-tweet: `unga bunga`,
-username: `john`,
-created_at: `6-10-2021`,
-age: 30
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 25
 },
 {
-tweet: `i ate cheese`,
-username: `ronald`,
-created_at: `3-20-2011`,
-age: 20
-},
-
-{
-tweet: `star wars bad`,
-username: `angel291`,
-created_at: `4-23-2022`,
-age: 10
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 18
 },
 {
-tweet: `I love harry potter`,
-username: `stupidguy300`,
-created_at: `1-18-2071`,
-age: 60
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 22
 },
 {
-tweet: `elon musk for president`,
-username: `Jillian`,
-created_at: `11-5-2016`,
-age: 23
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 3
 },
 {
-tweet: `I'll be back -John Sheppard`,
-username: `adrian3213`,
-created_at: `8-13-2023`,
-age: 43
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 7
 },
 {
-tweet: `ok`,
-username: `alex`,
-created_at: `3-18-2023`,
-age: 27
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 4
 },
 {
-tweet: `i dont use twitter`,
-username: `personguy21`,
-created_at: `4-4-2018`,
-age: 16
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 35
 },
 {
-tweet: `ape together strong`,
-username: `apeguy`,
-created_at: `2-9-2021`,
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 5
+},
+{
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
+age: 8
+},
+{
+tweet: `tweet`,
+username: `author`,
+created_at: `date`,
 age: 19
-},
-{
-tweet: `SWING OF THE MOP`,
-username: `thejanitor`,
-created_at: `9-6-2023`,
-age: 29
 },
 ]
 
-
 let counter = 0;
 
-while(counter < tweeters.length){
-    console.log(tweeters[counter]);
-    counter = counter  +1;
+
+while(counter < tweets.length){
+
+if(tweets[counter][`age`] >= 18 ){
+
+console.log(tweets[counter]);
+}
+counter = counter +1;
 }
 
-console.log('text break');
+console.log(`text break`)
 
-for(let counter = 0; counter < tweeters.length; counter = counter +1){
 
-console.log(tweeters[counter]);
+for(let counter = 0; counter < tweets.length; counter = counter +1){
 
+    if(tweets[counter][`age`] < 18 ){
+        console.log(tweets[counter]);
+
+    }
 
 }
