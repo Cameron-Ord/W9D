@@ -1,3 +1,6 @@
+
+//A variable labeled tweetsthat contains an array of objects//
+
 let tweets = [
     {
         tweet: `i ate cheese`,
@@ -61,6 +64,8 @@ let tweets = [
     }
 ]
 
+//setting the counter for the while loop//
+
 let counter = 0;
 
 
@@ -69,11 +74,19 @@ while (counter < tweets.length) {
         console.log(tweets[counter]);
     }
     counter = counter + 1;
-}
+};
+
+//this loop goes through the array from 0-9(there are 10 items in the array) using [counter] and logs the tweets that are made by posters over the age of 18//
+
 console.log(`text break`)
+
+
 for (let counter = 0; counter < tweets.length; counter = counter + 1) {
     if (tweets[counter][`age`] < 18) {
         console.log(tweets[counter]);
     }
 
-}
+};
+
+
+//this achieves the same result but by using a for loop instead of a while loop//
